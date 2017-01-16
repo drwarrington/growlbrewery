@@ -1,0 +1,14 @@
+<table id="menu" metal:define-macro="beer_table">
+  <thead>
+    <tr>
+      <th>Beer</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr tal:repeat="beer beer_menu">
+      <td tal:content="beer/name"/>
+      <td tal:content="beer/price"/>
+    </tr>
+  </tbody>
+</table>
